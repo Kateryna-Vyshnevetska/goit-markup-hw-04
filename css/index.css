@@ -1,0 +1,207 @@
+/* Styles for index.html */
+
+/* .......................................... */
+/* Hero */
+.hero {
+  text-align: center;
+  background-color: teal;
+}
+
+.hero .hero-content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  width: 696px;
+  background-color: tomato;
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  text-align: center;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Sections */
+.section-title{
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* .......................................... */
+/* Future Section */
+
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-list .title{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature-list .text{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.feature-list .item {
+  width: 270px;
+}
+
+.feature-list .font-item {
+  width: 270px;
+  height: 120px;
+
+  background: var(--bgc-team-section);
+  border-radius: 4px;
+}
+
+.feature-list .item +.item {
+  margin-left: 30px;
+}
+
+.feature-list .font-item:hover,
+.feature-list .font-item:focus{
+  background: var(--accent-color);
+}
+
+/* Уберу в 4-м таске */
+.feature-list .centred-img{
+  padding: 25px 100px;
+}
+
+/* .......................................... */
+/* Work Section */
+.work-list {
+  display: flex;
+}
+
+.work-list .title{
+  background-color: var(--bgc-work-section);
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.work-list .item +.item{
+  margin-left: 30px;
+}
+
+.work-list h3 {
+  margin:0 auto;
+}
+
+/* .......................................... */
+/* Team Section */
+.team{
+  background-color: var(--bgc-team-section);
+}
+
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  height: 422px;
+}
+
+.team-list .networks {
+  width: 206px;
+  height: 44px;
+  margin-left: 32px;
+  margin-right: 32px;
+
+  display: flex;
+}
+
+.team-list .networks .link{
+  display: block;
+  padding: 12px 12px;
+}
+
+.team-list >.item {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.networks .item:hover,
+.networks .item:focus {
+  background-color: var(--accent-color);
+}
+
+.networks .item {
+  width: 44px;
+  height: 44px;
+  border-radius: 30px;
+  margin-bottom: 24px;
+}
+
+.networks .item +.item {
+  margin-left: 10px;
+}
+
+.team-list .title{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.team-list .profession{
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/* .......................................... */
+/* Customers */
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers-list .item {
+  padding: 25px 65px;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--border-logo-customers);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
