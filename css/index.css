@@ -4,7 +4,22 @@
 /* Hero */
 .hero {
   text-align: center;
-  background-color: teal;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.8), 
+    rgba(47, 48, 58, 0.8)),
+    url(../img/Header-compress.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero .hero-content {
@@ -22,7 +37,6 @@
   margin-bottom: 30px;
 
   width: 696px;
-  background-color: tomato;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -74,10 +88,13 @@
   width: 270px;
 }
 
+.font-item {
+  padding: 25px 100px;
+}
+
 .feature-list .font-item {
   width: 270px;
   height: 120px;
-
   background: var(--bgc-team-section);
   border-radius: 4px;
 }
@@ -86,15 +103,33 @@
   margin-left: 30px;
 }
 
-.feature-list .font-item:hover,
-.feature-list .font-item:focus{
-  background: var(--accent-color);
+
+/* 
+.feature-list .item::before {
+  display: block;
+  content: " ";
+  height: 120px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--bgc-team-section);
 }
 
-/* Уберу в 4-м таске */
-.feature-list .centred-img{
-  padding: 25px 100px;
+.item.icon-antenna::before {
+  background-image: url(../img/antenna.svg);
 }
+
+.item.icon-clock::before {
+  background-image: url(../img/clock.svg);
+}
+
+.item.icon-diagram::before {
+  background-image: url(../img/diagram.svg);
+}
+
+.item.icon-astronaut::before {
+  background-image: url(../img/astronaut.svg);
+} */
 
 /* .......................................... */
 /* Work Section */
@@ -134,42 +169,15 @@
 .team-list {
   display: flex;
   justify-content: space-between;
-  height: 422px;
 }
 
-.team-list .networks {
-  width: 206px;
-  height: 44px;
-  margin-left: 32px;
-  margin-right: 32px;
-
-  display: flex;
-}
-
-.team-list .networks .link{
-  display: block;
-  padding: 12px 12px;
+.team-list >.item {
+  background-color: var(--primary-white-color);
 }
 
 .team-list >.item {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-}
-
-.networks .item:hover,
-.networks .item:focus {
-  background-color: var(--accent-color);
-}
-
-.networks .item {
-  width: 44px;
-  height: 44px;
-  border-radius: 30px;
-  margin-bottom: 24px;
-}
-
-.networks .item +.item {
-  margin-left: 10px;
 }
 
 .team-list .title{
@@ -197,11 +205,19 @@
   justify-content: space-between;
 }
 
-.customers-list .item {
-  padding: 25px 65px;
+.customers-list .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid var(--border-logo-customers);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.customers-list .color-hover:hover,
+.customers-list .color-hover:focus {
+  border: 1px solid var(--accent-color);
+  --color3:var(--accent-color)
 }

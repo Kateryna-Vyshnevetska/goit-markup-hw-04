@@ -92,9 +92,53 @@ img{
 }
 
 
+/* Styles for icons */
+/* .......................................... */
+.networks {
+  display: flex;
+  width: 206px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 24px;
+}
+
+
+.networks .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.networks-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.networks .item +.item {
+  margin-left: 10px;
+}
+
+.networks .item:hover,
+.networks .item:focus {
+  border-radius: 30px;
+  background-color: var(--accent-color);
+  --color3: var(--primary-white-color)
+}
+/* .......................................... */
+
+
 /* Navigation Style*/
 /* .......................................... */
 /* Main logo */
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
 .logo{
   color:var(--title-text-color) ;
   text-decoration: none;
@@ -119,13 +163,19 @@ img{
   border-bottom: 1px solid #ECECEC;
 }
 
-.container{
+.section {
+  width: 1600px;
   margin-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.container{
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   /* outline: 2px solid green; */
 }
 
@@ -179,37 +229,48 @@ img{
   display: flex;
   margin-left: auto;
 }
-/* УБРАТЬ */
-/* .auth-site .item{
-  outline: 2px solid green;
-} */
-.auth-site .item {
-  display: flex;
-}
 
-.auth-site .item + .item{
+.auth-site .item:last-child {
   margin-left: 30px;
 }
 
 .auth-site .link{
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .auth-site .link{
-  margin-left: 10px;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
 
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.icon-tel {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.color-hover {
+  color: var(--primary-text-color);
+}
+
 .auth-site .link:hover,
 .auth-site .link:focus{
   color: var(--accent-color);
+  --color4: var(--accent-color)
 }
+
+
 
 /* .......................................... */
 /* Footer */
@@ -280,26 +341,24 @@ img{
   color: var(--primary-white-color)
 }
 
-.social-links{
-  display: flex;
+.join-us .networks {
+  padding-bottom: 0px;
 }
 
-.social-links .item{
-  width: 44px;
-  height: 44px;
+
+.join-us .networks .link{
+  background-color: var(--bgc-social-links);
   border-radius: 30px;
-  background: var(--bgc-social-links);
 }
-.social-links .link {
-  display: block;
-  padding: 12px 12px;
-}
+
+.join-us .networks-icon {
+  --color3: var(--primary-white-color)
+} 
+
 
 .social-links .item+.item {
   margin-left: 10px;
-}
+} 
 
-.social-links .item:hover,
-.social-links .item:focus {
-  background-color: var(--accent-color);
-}
+
+
