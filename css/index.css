@@ -7,6 +7,7 @@
 }
 
 .overlay {
+  padding: 0 0;
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -133,6 +134,10 @@
 
 /* .......................................... */
 /* Work Section */
+.work {
+  padding-bottom:94px;
+}
+
 .work-list {
   display: flex;
 }
@@ -162,8 +167,8 @@
 }
 
 .team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 47px;
+  padding-bottom: 47px;
 }
 
 .team-list {
